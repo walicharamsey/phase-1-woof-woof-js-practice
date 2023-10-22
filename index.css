@@ -1,53 +1,56 @@
-#filter-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: skyblue;
-
+/* Apply styles to the filter button */
+#filter-button {
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
-#good-dog-filter {
-  margin-top: 1vh;
-  width: 35vw;
-  font-size: 1em;
-  height: 5vh;
-  border-radius: 3em;
-}
-
+/* Apply styles to the dog bar */
 #dog-bar {
-  height: 15vh;
-  background: skyblue;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
 }
 
 #dog-bar span {
-  height: 80%;
-  width: 8vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 2em;
-  border: 1px solid blue;
+  padding: 5px 10px;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
 }
 
-#dog-summary-container {
-  height: 75vh;
-  text-align: center;
-}
-
+/* Apply styles to the dog info section */
 #dog-info {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
+  text-align: center;
+  padding: 20px;
 }
 
 #dog-info img {
-  max-width: 75vw;
-  max-height: 25vw;
+  max-width: 100%;
+  border: 2px solid #3498db;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-body {
-  margin: 0;
+#dog-info h2 {
+  margin: 10px 0;
+  font-size: 24px;
+  color: #333;
+}
+
+#dog-info button {
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+#dog-info button:hover {
+  background-color: #c0392b;
 }
